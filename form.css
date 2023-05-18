@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+.menu{
+    background-color:orange ;
+    overflow: hidden;
+}
+.menu a{
+    float: left;
+    color: white;
+    text-align:center ;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+.menu a:hover{
+    background-color: tomato;
+    color:black;
+}
+.menu a:active{
+    background-color: tomato;
+    color:black;  
+}
+.text{
+	background:skyblue;
+	border-radius:25px;
+     border: 4mm ridge rgba(211, 220, 50, 1);
+}
+.password{
+	background:skyblue;
+	border-radius:25px;
+     border: 4mm ridge rgba(211, 220, 50, 1);
+}
+.buy{
+	background:yellow;
+	border-radius:25px;
+     border: 4mm ridge rgba(50, 80, 220,1);
+}
+form{
+     border: 4mm ridge rgba(50, 80, 220,1);
+	 padding:10px;
+	 display:inline-block;
+	 margin-left:30%;
+}
+.name{
+	background:skyblue;
+	border-radius:25px;
+     border: 4mm ridge rgba(211, 220, 50, 1);
+}
+.town{
+	background:skyblue;
+	border-radius:25px;
+     border: 4mm ridge rgba(211, 220, 50, 1);
+}	
+

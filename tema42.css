@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+	overflow-x:hidden;
+}
+ol{
+	list-style: none;
+	margin: 0;
+}
+.menu{
+    background-color:orange ;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu a{
+	
+    float: left;
+    color: white;
+    text-align:center ;
+    padding: 21px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+.menu a:hover{
+    background-color: tomato;
+    color:black;
+}
+.menu a:active{
+    background-color: tomato;
+    color:black;  
+}
+.menubut {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:0;
+	size:10px;
+}
+.text{
+	font-size:30px;
+}
+.dropdown {
+    position: relative;
+	display: inline-block;
+	
+}
+.dropdown-href {
+    display: none;
+    background-color: skyblue;
+    max-width: 300px;
+	text-align:center;
+}
+.dropdown-href a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-href {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	position: absolute;
+	padding: 0;
+	left: -25%;
+	z-index: 4;
+}
+.menuhover:hover{
+	background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top:20px;
+	
+}
+.card{
+	width:300px;
+	height:300px;
+	border:1px solid red;
+	box-shadow: black 5px 5px 8px ;
+}
+.prod1{
+	width:100%;
+	height:80%;
+	object-fit: cover;
+	float:left;
+	border-bottom: 2px solid red;
+}
+.prod-other{
+	width:100%;
+	height: 242px;	
+	object-fit: contain;
+	border-bottom: 2px solid red;
+}
+@media screen and (max-width: 900px){
+		.dropdown:hover .dropdown-href {
+			left:-20%;
+		}
+		.dropdown:hover .dropdown-href a{
+			font-size: 20px;
+		}
+}
+@media screen and (max-width: 1230px){
+		.cards{
+			padding: 0 200px;
+		}
+}
+@media screen and (max-width: 680px){
+		.menu a{
+			font-size: 20px;
+		}
+}
+@media screen and (max-width: 500px){
+		.menu a{
+			font-size: 14px;
+		}
+}
+@media screen and (max-width: 400px){
+		.menu a{
+			display: block;
+			width: 100%;
+			font-size: 20px;
+		}
+}
+.other{
+	margin:0;
+}
+.card1{
+	width:300px;
+	height:300px;
+	border:1px solid red;
+	margin-left: 10px;
+
+}
+.prod2{
+	
+}
+.head-phone{
+	color: cyan;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.card:hover{
+	color: orange;
+	border-radius: 3pc;
+}
+
+
+
+
+.foot{
+	margin-top:50px;
+    border-top:1px double red;
+    padding: 2pc;
+    height: 19pc;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.silk{
+    text-decoration: none;
+    color:skyblue;
+    position: relative;
+  
+}
+.silk::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background:orange;
+    position: absolute;
+    left: 0;
+    bottom:0px;
+    transition: 0.5s;
+}
+.silk:hover::after{
+    width: 100%;
+}
+.h3{
+    display: inline;
+    border-radius: 35px;
+    border: none;
+    margin: 15px;
+    padding: 5px 20px;
+    background-color: white;
+}
+.p1{
+    margin: 0%; 
+}
+h2[id="prava"]{
+    color: skyblue;
+    margin-top: 130px;
+}
+.animet{
+	width:100px;
+	height: 100px;
+	animation: move 7s infinite linear;
+	position: relative;
+    
+}
+
+.p2{
+	margin:0;
+	margin-top:10px;
+	width: 100px;
+	height: 100px;
+}
+.a1{
+	width: 100px;
+	height: 100px;
+}
+@keyframes move {
+	0%{left: -100px; transform:rotate(0deg);}
+	100%{left: 1400px; transform:rotate(360deg); }
+}

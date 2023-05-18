@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0; 
+	
+}
+.menu{
+    background-color:orange ;
+    overflow: hidden;
+}
+.menu a{
+    float: left;
+    color: white;
+    text-align:center ;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+.menu a:hover{
+    background-color: tomato;
+    color:black;
+}
+.menu a:active{
+    background-color: tomato;
+    color:black;  
+}
+.h1{
+	color:orange;
+}
+.foot{
+	margin-top:50px;
+    border-top:1px double red;
+    padding: 2pc;
+    height: 19pc;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.silk{
+    text-decoration: none;
+    color:skyblue;
+    position: relative;
+  
+}
+.silk::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background:orange;
+    position: absolute;
+    left: 0;
+    bottom:0px;
+    transition: 0.5s;
+}
+.silk:hover::after{
+    width: 100%;
+}
+.h3{
+    display: inline;
+    border-radius: 35px;
+    border: none;
+    margin: 15px;
+    padding: 5px 20px;
+    background-color: white;
+}
+.p1{
+    margin: 0%; 
+}
+h2[id="prava"]{
+    color: skyblue;
+    margin-top: 130px;
+}
+.animet{
+	width:100px;
+	height: 100px;
+	animation: move 7s infinite linear;
+	position: relative;
+    
+}
+
+.p2{
+	margin:0;
+	margin-top:10px;
+	width: 100px;
+	height: 100px;
+}
+.a1{
+	width: 100px;
+	height: 100px;
+}
+@keyframes move {
+	0%{left: -100px; transform:rotate(0deg);}
+	100%{left: 1400px; transform:rotate(360deg); }
+}
